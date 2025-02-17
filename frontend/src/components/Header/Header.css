@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 34vw;
+    margin: 30px auto;
+    background-image: url(img_header.png);
+    background-position: center;
+    overflow: hidden;
+ }
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    margin-left: 20px;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 900;
+    color:rgb(130, 48, 0);
+    font-size: max(4vw, 22px);
+    background-color: rgba(255, 255, 255, 0.7); /* Add a white background with transparency */
+}
+
+.header-contents p{
+    color:rgb(217, 91, 19);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a white background with transparency */
+}
+
+.header-contents button{
+    border: none;
+    color: black;
+    padding: 1vw 2.3vw;
+    font-weight: 700;
+    background-color: tomato;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-contents button:hover {
+    background-color: darkred; /* Change color on hover */
+    color: white;
+}
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 65%; /* Increase content width on smaller screens */
+        gap: 2vw; /* Adjust spacing */
+    }
+
+    .header-contents h2 {
+        font-size: max(4vw, 20px); /* Reduce font size */
+    }
+
+    .header-contents p {
+        font-size: max(1.5vw, 14px); /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 50%; /* Increase width on even smaller screens */
+        gap: 3vw; /* Adjust spacing */
+    }
+
+    .header-contents h2 {
+        font-size: max(3.5vw, 18px); /* Reduce font size further */
+    }
+
+    .header-contents p {
+        font-size: max(1.2vw, 12px); /* Adjust paragraph font size further */
+    }
+}

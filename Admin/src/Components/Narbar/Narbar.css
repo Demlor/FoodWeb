@@ -1,0 +1,14 @@
+.narbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.narbar .logo{
+    width: max(10%, 80px);
+}
+
+.narbar .profile{
+    width: 40px;
+}

@@ -1,0 +1,77 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 15px;
+    justify-items: center;
+  }
+  
+  .list-table{
+      width: 1400px;
+  }
+  
+  .list-table-format b{
+      font-weight: bold;
+      font-size: large;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .list-table-format.title{
+      background-color: #dbdada;
+  }
+  
+  .list-table-format img{
+      width: 50px;
+  }
+  
+  .text_list{
+      font-weight: 900;
+      font-size: x-large
+  }
+
+  .list-table-format-act{
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+  
+  .list-table-format-act .btn{
+      cursor: pointer;
+      padding: 5px 10px;
+      border: 1px solid #fbb8b8;
+      background-color: aliceblue;
+      border-radius: 5px;
+  }
+
+  .edit-form{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .edit-form input{
+      padding: 12px 15px;
+      border: 1px solid #cacaca;
+      font-size: 15px;
+    }
+  .save-btn{
+      max-width: 120px;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #f9f5f5;
+      cursor: pointer;
+  }
+  @media (max-width: 600px){
+      .list-table-format{
+          grid-template-columns: 1fr 3fr 1fr;
+          gap: 15px;
+      }
+      .list-table-format.title{
+          display: none;
+      }
+      
+  }
